@@ -1,0 +1,139 @@
+##EXERCICE 1
+
+age = 19
+height = 1.75  
+numComplex = 4 + 3j
+
+base = int(input("Entrer la  base : "))
+hauteur = int(input("Entrer la hauteur : "))
+zone = 0.5 * base * hauteur
+ 
+print(f"La zone du triangle est : {zone}")
+
+
+A= int(input("Entrer la valeur du côté A : "))
+B= int(input("Entrer la valeur du côté B : "))
+C= int(input("Entrer la valeur du côté C : "))
+
+perimêtre = A + B + C
+print(f"\nLe périmêtre du triangle est : {perimêtre}")
+
+length = float(input("Entrer la longueur : "))
+width = float(input("Entrer la largeur : "))
+area_rectangle= length * width
+perimeter_rectangle = 2 * (length + width)
+print(f"\nL'aire du rectangle est : {area_rectangle}")
+
+##N7
+
+rayon = float(input("Entrer le rayon du cercle : "))
+pi = 3.14
+aire_cercle = pi * rayon * rayon
+circonference = 2 * pi * rayon
+print(f"\nL'aire du cercle est : {aire_cercle}")
+
+##N8
+#equation y = 2x -2 -> pente m = 2
+m_equation = 2
+x_intercept = 1
+y_intercept = -2
+print(f"\nLa pente est : {m_equation}, l'intercept en x est : {x_intercept}, l'intercept en y est : {y_intercept}")
+
+##N9
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+m_points = (y2 - y1) / (x2 - x1)
+distance = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+print(f"\nLa pente entre les points est : {m_points}, la distance euclidienne entre les deux points est : {distance}")
+
+##N10
+print(f"\nComparaison des pentes : pente équation = {m_equation}, pente  entre points = {m_points}")
+
+if m_equation == m_points:
+    print(f"\nLes  deux pentes sont égales.")
+else:
+    print(f"\nLes deux pentes sont différentes.")
+
+
+
+##N11
+print(f"\nEquation : y = x² + 6x + 9")
+for x in range(-10, 5):
+    y = x**2 + 6*x + 9
+    print(f"x= {x}, y = {y}")
+    if y == 0:
+        print(f"y =0 quand x= {x}")
+
+
+##N12
+len_python = len("python")
+len_dragon = len("dragon")
+
+print(f"\nLa Longueur de 'python' est : {len_python}, Longueur de 'dragon' est : {len_dragon}")
+print(len_python > len_dragon)
+
+##N13
+
+if 'on' in 'python' and 'on' in 'dragon':
+    print("\n'on' est présent dans les deux mots.")
+    
+##N14
+phrase = "I hope this course is not full of jargon."
+if 'jargon' in phrase:
+    print("\nLe mot 'jargon' est bien présent dans la phrase.")
+
+##N15
+
+print("\nIl n'y a pas de 'on' dans python et dragon ? ", "on" not in "python" and "on" not in "dragon")
+
+##N16
+length_python = len("python")
+as_float = float(length_python)
+as_str = str(as_float)
+
+print(f"\nLongueur = {length_python}, en float = {as_float}, en string = '{as_str}'")
+
+##N17
+
+number = int(input("\nEntrez un nombre pour vérifier s\'il est pair : "))
+
+if number % 2 == 0:
+    print(f"{number} est un nombre pair.")
+else:
+    print(f"{number} est un nombre impair.")
+
+
+##N18
+print("\n Voilà la solution : ", 7//3 == int(2.7)) # 7//3 = 2 et int(2.7) = 2 -> True
+
+##N19
+print("\n Voilà la solution : ", type('10') == type(10))#str vs int ->False
+
+##N20
+#int('9.8') provoquerait une erreur, car '9.8' n'est pas un entier valide
+
+try:
+    print("\nVoilà la solution : ", int('9.8') == 10)
+except ValueError:
+    print("\nErreur : '9.8' ne peut pas être converti en entier.")
+    
+
+##N21
+heures = int(input("\nEntrez le nombre d\'heures travaillées cette semaine : "))
+taux_horaire = float(input("Entrez votre taux horaire : "))
+salaire = heures * taux_horaire
+print(f"Votre salaire hebdomadaire est : {salaire} ")
+
+##N22
+year = int(input("\nEntrer le nombre d\'années que vous avez vécues : "))
+secondes_par_année = 365 * 24 * 60 * 60
+print(f"Vous avez vécu environ {year * secondes_par_année} secondes.")
+
+
+##N23
+print("\nLe Tableau demandé : ")
+for i in range(1, 6):
+    print(f"{i} {i**2} {i**3}")
+
+
+
