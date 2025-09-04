@@ -1,9 +1,10 @@
 ##NN1
-
 print('Thirty '+'Days '+'Of '+'Python ' )
 ##NN2
+
 print( "'Coding "+"For "+"All'")
 ##NN3
+
 company = "Coding For All"
 print(company)
 len_company = len(company)
