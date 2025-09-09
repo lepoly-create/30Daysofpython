@@ -15,7 +15,7 @@ print("\nAfter adding multiple companies:", it_companies) ##update() insère plu
 
 ##N4
 it_companies.remove('Google')
-print("_nAfter removing Google:", it_companies) ##remove() supprime l'élément, lève une erreur si l'élément n'existe pas
+print("\nAfter removing Google:", it_companies) ##remove() supprime l'élément, lève une erreur si l'élément n'existe pas
 
 ##N5 : différence entre remove et discard 
 
